@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.aside {
+  width: 20rem;
+}
+
+.main {
+  width: 100%;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+}
+
+.navBar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.list-group {
+  border-radius: 0;
+}
+
+.list-group-item {
+  border-left: 5px solid transparent !important;
+  transition: 0.2s;
+}
+
+.list-group-item:hover {
+  color: red;
+  border-left: 5px solid red !important;
+}
+
+.list-group-item.active {
+  background: none;
+  color: red;
+  border-left: 5px solid red !important;
+}
+
+.card-icon-con {
+  width: 50px;
+  height: 50px;
+}
+
+.bar-chart-con {
+  height: 300px;
+}
+
+.visitor-chart-con {
+  height: 320px;
+}
+
+/* Ready Class */
+.form-control:focus {
+  box-shadow: none;
+}
+
+.rounded-9px {
+  border-radius: 9px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+  .aside {
+    width: 15rem;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 1041;
+    background-color: #fff;
+  }
+
+  .aside.show {
+    left: 0;
+  }
+}
